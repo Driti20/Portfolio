@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+body{
+  padding: 0px;
+  margin: 0;
+  --Nav-bckground:#fff;
+  --page-bckground:	#e4e4e4;
+  --text-color:#111111;
+  --description-color:#6a6767;
+  transition: 300ms ease-in-out;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark-mode{
+  padding: 0px;
+  margin: 0;
+  --Nav-bckground:	#171917;
+  --page-bckground:	#050505;
+  --text-color:#fff;
+  transition: 300ms ease-in-out;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.theme-orange{
+  --theme:#EB8341;
+  --color1-border:#6a6767;
+  --color2-border:transparent;
+  --color3-border:transparent;
+  --color4-border:transparent;
+  --color5-border:transparent;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.theme-blue{
+  --theme:#427CFF;
+  --color2-border:#6a6767;
+  --color1-border:transparent;
+  --color3-border:transparent;
+  --color4-border:transparent;
+  --color5-border:transparent;
 }
-
-.App-link {
-  color: #61dafb;
+.theme-pink{
+  --theme:#B22BE1;
+  --color3-border:#6a6767;
+  --color2-border:transparent;
+  --color1-border:transparent;
+  --color4-border:transparent;
+  --color5-border:transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theme-red{
+  --theme:#D53333;
+  --color4-border:#6a6767;
+  --color2-border:transparent;
+  --color3-border:transparent;
+  --color1-border:transparent;
+  --color5-border:transparent;
+}
+.theme-green{
+  --theme:#5FB364;
+  --color5-border:#6a6767;
+  --color2-border:transparent;
+  --color3-border:transparent;
+  --color4-border:transparent;
+  --color1-border:transparent;
 }
