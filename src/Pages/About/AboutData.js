@@ -3,7 +3,7 @@ import { SiHtml5, SiCss3, SiJavascript, SiPhp, SiJava, SiMysql, SiCsharp } from 
 export const AboutData=[{
     id:1,
     Birthday:'09/20/2000',
-    WebSite:'',
+    WebSite:'mendritmiftari.netlify.app',
     Degree:'Student of CSE',
     City:'Drenas/Kosovo',
     email:'miftarimendrit@gmail.com',

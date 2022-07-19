@@ -6,6 +6,7 @@ import "./About.css";
 import { AboutData, Skills } from "./AboutData";
 import * as moment from "moment";
 import { Link } from "react-router-dom";
+import cv from '../../Components/CV/CV.pdf'
 
 const About = () => {
   return (
@@ -80,7 +81,7 @@ const About = () => {
         })}
         <div className="about-data-btn">
           <div className="about-data-cv">
-            <Link to="/">Download CV</Link>
+            <a href={cv} download>Download CV</a>
           </div>
           <div className="about-data-hire">
             <Link to="/Contact">Hire Me</Link>
