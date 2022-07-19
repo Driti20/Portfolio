@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+.home {
+  height: 100vh;
+}
+.home-data {
+  background: var(--page-bckground);
+  margin-left: 20%;
+  height: 100%;
+  display: flex;
+  transition: 0.2s ease-in-out;
+}
+.home-data-left {
+  padding-left: 3%;
+  padding-top: 20%;
+  flex: 1;
+}
+.home-title {
+  font-size: clamp(1rem, 2vw, 3rem);
+  color: var(--text-color);
+}
+.name {
+  color: var(--theme);
+  font-family: "Satisfy", cursive;
+  transition: 0.3s ease-in-out;
+}
+.home-h1 {
+  display: flex;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+.home-h1 > * {
+  margin: 0;
+  color: var(--text-color);
+}
+.home-typical {
+  color: var(--theme);
+  transition: 0.3s ease-in-out;
+}
+.home-description {
+  color: var(--description-color);
+  font-size: max(0.8rem, 1vw);
+}
+.home-hireMe-btn {
+  margin-top: 10%;
+  width: fit-content;
+  padding: 15px 0;
+  background: var(--theme);
+  border-radius: 40px;
+  transition: 0.3s ease-in-out;
+}
+.home-hireMe-btn > * {
+  color: #fff;
+  text-decoration: none;
+  padding: max(0.5rem, 0.5vw) max(2rem, 2vw);
+  font-size: max(0.8rem, 1vw);
+}
+@media (max-width: 768px) {
+  .home-data {
+    margin-left: 0;
+    padding-top: 50px;
+  }
+}
+.home-data-right {
+  flex: 1;
+  padding-top: 20%;
+}
+::after,
+::before {
+  box-sizing: border-box;
+}
+.home-image {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.home-image::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height:5rem ;
+  border-bottom: 5px solid var(--theme);
+  border-right: 5px solid var(--theme);
+  bottom: -10px;
+  right: -10px;
+  transition: 0.3s ease-in-out;
+}
+.home-image::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height:5rem ;
+    border-top: 5px solid var(--theme);
+    border-left: 5px solid var(--theme);
+    top: -10px;
+    left: -10px;
+    transition: 0.3s ease-in-out;
+  }
+
+.home-image > * {
+  width: 100%;
+}
+
+.home-image:hover::after{
+    width: 110%;
+    height: 110%;
+}
+.home-image:hover::before{
+    width: 110%;
+    height: 110%;
+}
+@media (max-width: 550px) {
+    .home-data{
+        display: block;
+    }
+    .home-data-right {
+        flex: auto;
+        width: 90vw;
+    }
+    .home-data-left {
+        flex: auto;
+        width: 90vw;
+    }
+}

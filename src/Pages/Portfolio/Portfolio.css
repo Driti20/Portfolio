@@ -1,0 +1,117 @@
+.Portfolio{
+    height: fit-content;
+}
+.Portfolio-data {
+  background: var(--page-bckground);
+  margin-left: 20%;
+  height: 100%;
+  padding: 3% 0;
+}
+::after, ::before{
+    box-sizing: border-box;
+}
+.Portfolio-data-title{
+    margin-left: 3%;
+    width: fit-content;
+    position: relative;
+    color: var(--text-color);
+    font-size: max(1rem,1.5vw);
+}
+.Portfolio-data-title::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    border-bottom: 3px solid var(--theme);
+    bottom: -25px;
+    transition: 0.3s ease-in-out;
+}
+.Portfolio-data-title::before{
+    content: '';
+    position: absolute;
+    width: 40%;
+    border-bottom: 3px solid var(--theme);
+    bottom: -10px;
+    transition: 0.3s ease-in-out;
+}
+.Portfolio-data-title:hover::before{
+    width: 80%;
+    transition: 0.3s ease-in-out;
+}
+.Portfolio-data-title:hover::after{
+    width: 60%;
+    transition: 0.3s ease-in-out;
+}
+.Portfolio-data-text{
+    margin:4rem 3%;
+    width: fit-content;
+    position: relative;
+    color: var(--text-color);
+    font-size: max(0.8rem,1.2vw);
+}
+.Portfolio-data-projects{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project{
+    width: max(30%,18rem);
+    border: 5px solid var(--Nav-bckground);
+    margin: 10px;
+    position: relative;
+}
+.project>img{
+    width: 100%;
+    height: max(10rem,10vw);
+    transition:0.3s ease-in-out ;
+}
+.project-data{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #111;
+    fill: #111;
+    display: none;
+    transition:0.3s ease-in-out ;
+    justify-content: center;
+    bottom: 0;
+}
+.project-data>h2{
+    font-size: max(2rem,2vw);
+}
+.links{
+    display: flex;
+}
+.links>*{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    background:#fff;
+    font-size:max(1.5vw, 1.5rem);
+    border-radius: 100%;
+    
+}
+.links>*>*>*{
+    fill: #111;
+}
+.project:hover >img{
+    filter: blur(5px);
+    transition:0.3s ease-in-out ;
+}
+.project:hover .project-data{
+    display: block;
+    transition:0.3s ease-in-out ;
+}
+@media (max-width: 768px){
+    .Portfolio-data{
+        margin-left: 0;
+        padding-top:50px;
+    }
+}   
+@media (min-width: 1200px){
+    .Portfolio{
+        height: 100vw;
+        overflow: hidden;
+    }
+}
