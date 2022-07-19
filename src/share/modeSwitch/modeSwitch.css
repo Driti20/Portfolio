@@ -1,0 +1,19 @@
+.mode-switch{
+    position: fixed;
+    display: flex;
+    width: max(2rem,3vw);
+    height:max(2rem,3vw);
+    border-radius: 100%;
+    background: var(--Nav-bckground);
+    color: var(--text-color);
+    right: 10px;
+    top: max(120px,7vw);
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    cursor: pointer;
+}
+.mode-switch>*{
+    margin: auto;
+    font-size: max(1rem,1.5vw);
+}
