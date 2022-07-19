@@ -12,6 +12,7 @@
     align-items: center;
     padding: auto;
     cursor: pointer;
+    z-index: 100;
 }
 .color-switch>*{
     margin: auto;
