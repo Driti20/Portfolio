@@ -1,0 +1,11 @@
+.mobile-toolbar{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: var(--Nav-bckground);
+    padding:5px 10px;
+    padding-top:10px ;
+    border-radius:20% ;
+    z-index: 10;
+    color: var(--text-color);
+}

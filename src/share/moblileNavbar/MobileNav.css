@@ -1,0 +1,34 @@
+.mobile-nav {
+  position: relative;
+  display: none;
+}
+.mobile-sidebar {
+  position: fixed;
+  width: 50%;
+  z-index: 3000;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background-color: var(--Nav-bckground);
+  height: 100%;
+  display: inline;
+  border-right: 1px solid #b6b6b6;
+  transition: 0.1s ease-in-out;
+}
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+  }
+}
+.mobile-sidebar-close-btn {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: var(--Nav-bckground);
+  padding: 5px 10px;
+  padding-top: 10px;
+  border-radius: 20%;
+  z-index: 10000;
+  color: var(--text-color);
+}
