@@ -6,7 +6,7 @@ import "./About.css";
 import { AboutData, Skills } from "./AboutData";
 import * as moment from "moment";
 import { Link } from "react-router-dom";
-import cv from '../../Components/CV/CV.pdf'
+import cv from '../../Components/CV/MyCV.pdf'
 
 const About = () => {
   return (
